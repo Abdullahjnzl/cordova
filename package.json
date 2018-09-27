@@ -8,9 +8,19 @@
       "android"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullahjnzl/cordova-plugin-qrreader.git"
+  },
   "keywords": [
-    "ecosystem:cordova",
+    "qr:cordova",
     "cordova-android"
+  ],
+   "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
   ],
   "author": "Abdullah Nazzal",
   "license": "MIT"
