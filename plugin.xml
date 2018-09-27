@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-qrreader" 
+    version="1.0.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>QRReaderPlugin</name>
+	<description>QR Reader Plugin for POS device .</description>
+	<author>abdullah nazzal</author>
+  	<license>MIT</license>
+	<keywords>cordova,android,qr,reader</keywords>
+	<repo>https://github.com/Abdullahjnzl/cordova-plugin-qrreader.git</repo>
+    <issue>https://github.com/Abdullahjnzl/cordova-plugin-qrreader/issues</issue>
+
+ 	<plugin name="cordova-plugin-qrreader" spec="git+https://github.com/Abdullahjnzl/cordova-plugin-qrreader.git">
+    
+    <!-- <variable name="APP_ID" value="cordova-plugin-printActivity"/>
+    <variable name="APP_NAME" value="cordova-plugin-printActivity"/> -->
+    </plugin>
+	<engines>
+	  <engine name="cordova" version=">=7.1.0"/>
+    </engines>
+    <js-module name="QRReaderPlugin" src="www/QRReaderPlugin.js">
+        <clobbers target="cordova.plugins.QRReaderPlugin" />
+    </js-module>
+    <platform name="android">
+		<framework custom="true" src="src/android/qrReaderPlugin.gradle" type="gradleReference" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="QRReaderPlugin">
+                <param name="android-package" value="cordova-plugin-qrreader.QRReaderPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        <source-file src="src/android/QRReaderPlugin.java" target-dir="src/cordova-plugin-qrreader/QRReaderPlugin" />
+		<resource-file src="src/android/libs/szxblibrary-debug.aar" target="libs/szxblibrary-debug.aar"/>
+    </platform>
+</plugin>

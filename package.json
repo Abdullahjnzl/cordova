@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-qrreader",
+  "version": "1.0.0",
+  "description": "POS QR Reader Plugin for android",
+  "cordova": {
+    "id": "cordova-plugin-qrreader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Abdullah Nazzal",
+  "license": "MIT"
+}
