@@ -26,12 +26,12 @@
 		<framework custom="true" src="src/android/qrReaderPlugin.gradle" type="gradleReference" />
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="QRReaderPlugin">
-                <param name="android-package" value="cordova-plugin-qrreader.QRReaderPlugin" />
+                <param name="android-package" value="com.plugins.qrreader.QRReaderPlugin" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
         </config-file>
-        <source-file src="src/android/QRReaderPlugin.java" target-dir="src/cordova-plugin-qrreader/QRReaderPlugin" />
+        <source-file src="src/android/com/plugins/qrreader/QRReaderPlugin.java" target-dir="src/cordova-plugin-qrreader/QRReaderPlugin" />
 		<resource-file src="src/android/libs/szxblibrary-debug.aar" target="libs/szxblibrary-debug.aar"/>
     </platform>
 </plugin>
